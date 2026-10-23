@@ -1,28 +1,28 @@
 # Written by retrofit's release workflow (cmd/release cask) for each
 # published build; an edit here is overwritten by the next one.
 cask "retrofit@wip" do
-  version "0.10.0-wip.3"
+  version "0.10.0-wip.4"
 
   on_macos do
     on_arm do
-      sha256 "65ee84b25cca0dd49d5950bb45a23f055265e147f6fca5d64c38bc47571f2307"
+      sha256 "4b081fd77063efaf1696ba3a9f52cd1ebb2d96a24ae8f5e2a3acf0e8548e73db"
       url "https://github.com/MonotonicHQ/retrofit/releases/download/bin-v#{version}/retrofit_darwin_arm64.tar.gz",
           verified: "github.com/MonotonicHQ/retrofit/"
     end
     on_intel do
-      sha256 "e824ff23bcf54c7567e5b965f0010673f21a6a7e50b70f7a46c7efb810dcf7b5"
+      sha256 "0f68896457cd8961581dfbab96c7159b343c08c05a84ec3d470309bedc2383ad"
       url "https://github.com/MonotonicHQ/retrofit/releases/download/bin-v#{version}/retrofit_darwin_amd64.tar.gz",
           verified: "github.com/MonotonicHQ/retrofit/"
     end
   end
   on_linux do
     on_arm do
-      sha256 "f2a9b39ab40811b32185073eaa8851002d8e46730377a853168643c14521c1b4"
+      sha256 "6d9161df2978a20433c604b37b16176a82535569d7de0182b944611a1b757498"
       url "https://github.com/MonotonicHQ/retrofit/releases/download/bin-v#{version}/retrofit_linux_arm64.tar.gz",
           verified: "github.com/MonotonicHQ/retrofit/"
     end
     on_intel do
-      sha256 "c0449f84b3fb68ebf8da5e5bbb954465fe684b5fa0eb1bf7a29483cd86f7a53d"
+      sha256 "c78c4662780832f693989116a6c9ca98d50a128713ee05aac82bb435298f321c"
       url "https://github.com/MonotonicHQ/retrofit/releases/download/bin-v#{version}/retrofit_linux_amd64.tar.gz",
           verified: "github.com/MonotonicHQ/retrofit/"
     end
