@@ -1,28 +1,28 @@
 # Written by retrofit's release workflow (cmd/release cask) for each
 # published build; an edit here is overwritten by the next one.
 cask "retrofit@wip" do
-  version "0.10.0-wip.4"
+  version "0.10.0-wip.5"
 
   on_macos do
     on_arm do
-      sha256 "4b081fd77063efaf1696ba3a9f52cd1ebb2d96a24ae8f5e2a3acf0e8548e73db"
+      sha256 "0ccda1181fb8397df078c2416588886455ceb7cfc7a450c4be862c95a48bf9b1"
       url "https://github.com/MonotonicHQ/retrofit/releases/download/bin-v#{version}/retrofit_darwin_arm64.tar.gz",
           verified: "github.com/MonotonicHQ/retrofit/"
     end
     on_intel do
-      sha256 "0f68896457cd8961581dfbab96c7159b343c08c05a84ec3d470309bedc2383ad"
+      sha256 "c8d055fef2d0a3b7ffad0011bc532a7a0a36eaa42de1ff47a5d720ef24f79efe"
       url "https://github.com/MonotonicHQ/retrofit/releases/download/bin-v#{version}/retrofit_darwin_amd64.tar.gz",
           verified: "github.com/MonotonicHQ/retrofit/"
     end
   end
   on_linux do
     on_arm do
-      sha256 "6d9161df2978a20433c604b37b16176a82535569d7de0182b944611a1b757498"
+      sha256 "dad8e1798d1ab638802ae5f6dab8b12eee728d2259be79387216a28ff08684d7"
       url "https://github.com/MonotonicHQ/retrofit/releases/download/bin-v#{version}/retrofit_linux_arm64.tar.gz",
           verified: "github.com/MonotonicHQ/retrofit/"
     end
     on_intel do
-      sha256 "c78c4662780832f693989116a6c9ca98d50a128713ee05aac82bb435298f321c"
+      sha256 "00db6daa852588d78c08925b60ae6d78dc01a838bf22d9ab4274c182572e7dd3"
       url "https://github.com/MonotonicHQ/retrofit/releases/download/bin-v#{version}/retrofit_linux_amd64.tar.gz",
           verified: "github.com/MonotonicHQ/retrofit/"
     end
@@ -49,6 +49,7 @@ cask "retrofit@wip" do
   manpage "man/man1/retrofit-init.1"
   manpage "man/man1/retrofit-migrate.1"
   manpage "man/man1/retrofit-op-add.1"
+  manpage "man/man1/retrofit-op-compact.1"
   manpage "man/man1/retrofit-op-info.1"
   manpage "man/man1/retrofit-op-remove.1"
   manpage "man/man1/retrofit-op-revise.1"
@@ -62,6 +63,7 @@ cask "retrofit@wip" do
   manpage "man/man1/retrofit-reconcile.1"
   manpage "man/man1/retrofit-schema-create.1"
   manpage "man/man1/retrofit-schema-engine.1"
+  manpage "man/man1/retrofit-schema-form.1"
   manpage "man/man1/retrofit-schema-list.1"
   manpage "man/man1/retrofit-schema-move.1"
   manpage "man/man1/retrofit-schema-ref-tables-add.1"
