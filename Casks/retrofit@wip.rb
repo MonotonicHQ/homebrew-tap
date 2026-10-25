@@ -1,28 +1,28 @@
 # Written by retrofit's release workflow (cmd/release cask) for each
 # published build; an edit here is overwritten by the next one.
 cask "retrofit@wip" do
-  version "0.10.0-wip.9"
+  version "0.10.0-wip.10"
 
   on_macos do
     on_arm do
-      sha256 "205e33e22aefcaa666f6548c80fc296f8e86823174ef0ece028015ffea83d01b"
+      sha256 "2e50d7f67af7b6eb632c53002cf7fc52efb28c261f1b02f49c84cc1442659841"
       url "https://github.com/MonotonicHQ/retrofit/releases/download/bin-v#{version}/retrofit_darwin_arm64.tar.gz",
           verified: "github.com/MonotonicHQ/retrofit/"
     end
     on_intel do
-      sha256 "bd34b4d000a196318ae99808a894c449f4543818494eb8e9b69bdf13b569a06c"
+      sha256 "1578480a727dcb0f77322bfa999876f4821c006c585501e4c47cceaf30f12db1"
       url "https://github.com/MonotonicHQ/retrofit/releases/download/bin-v#{version}/retrofit_darwin_amd64.tar.gz",
           verified: "github.com/MonotonicHQ/retrofit/"
     end
   end
   on_linux do
     on_arm do
-      sha256 "7dc0b0401b5dcf4cfc10eee3e579ef0f49a0a4aedeab5b1dd0cfa688ee94fa5e"
+      sha256 "b36c8bb3bce30f85f44f305b3759bdf4cfdf3f33c195a2b0497cb7b18e90917c"
       url "https://github.com/MonotonicHQ/retrofit/releases/download/bin-v#{version}/retrofit_linux_arm64.tar.gz",
           verified: "github.com/MonotonicHQ/retrofit/"
     end
     on_intel do
-      sha256 "d9742503da2697424e402c18e6b8a6a52a4e6b11a464a70331988f75a157aac2"
+      sha256 "ed32291dbf2fa16897830a294caebed6add4e374353a84e6cce6cc5c69889b7c"
       url "https://github.com/MonotonicHQ/retrofit/releases/download/bin-v#{version}/retrofit_linux_amd64.tar.gz",
           verified: "github.com/MonotonicHQ/retrofit/"
     end
@@ -44,6 +44,9 @@ cask "retrofit@wip" do
   manpage "man/man1/retrofit-data-witness.1"
   manpage "man/man1/retrofit-data.1"
   manpage "man/man1/retrofit-drift.1"
+  manpage "man/man1/retrofit-element-history.1"
+  manpage "man/man1/retrofit-element-list.1"
+  manpage "man/man1/retrofit-element.1"
   manpage "man/man1/retrofit-identify.1"
   manpage "man/man1/retrofit-import.1"
   manpage "man/man1/retrofit-init.1"
