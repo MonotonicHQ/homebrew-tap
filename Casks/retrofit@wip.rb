@@ -1,30 +1,26 @@
 # Written by retrofit's release workflow (cmd/release cask) for each
 # published build; an edit here is overwritten by the next one.
 cask "retrofit@wip" do
-  version "0.10.0-wip.20"
+  version "0.10.0-wip.21"
 
   on_macos do
     on_arm do
-      sha256 "5527249e2b27763faec6dc43b66f31b178306215c3abb439080ab27a5d8699b7"
-      url "https://github.com/MonotonicHQ/retrofit/releases/download/bin-v#{version}/retrofit_darwin_arm64.tar.gz",
-          verified: "github.com/MonotonicHQ/retrofit/"
+      sha256 "f614c031e269c53fe7260fdcba3abb1f97583b3da14440f69d805eb55ead37df"
+      url "https://github.com/MonotonicHQ/retrofit/releases/download/bin-v#{version}/retrofit_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "3c2ed5a529dd11221e912036a18c32ada1ddda007ac34857ddda8c93a7a54cd7"
-      url "https://github.com/MonotonicHQ/retrofit/releases/download/bin-v#{version}/retrofit_darwin_amd64.tar.gz",
-          verified: "github.com/MonotonicHQ/retrofit/"
+      sha256 "c0685f8d15207ecf70a5caf40f1da3454b0ffcdeada6cd493329b70495ffa23c"
+      url "https://github.com/MonotonicHQ/retrofit/releases/download/bin-v#{version}/retrofit_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "627ed13c7d494b2ca9129470dbfc2c4929b6d66128bc9ea58b9d02850f1c27d9"
-      url "https://github.com/MonotonicHQ/retrofit/releases/download/bin-v#{version}/retrofit_linux_arm64.tar.gz",
-          verified: "github.com/MonotonicHQ/retrofit/"
+      sha256 "2c9b242e0140aa9ab4c3011846a074b3b0d850d64ed71bb5970d16a63e4dfbde"
+      url "https://github.com/MonotonicHQ/retrofit/releases/download/bin-v#{version}/retrofit_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "320441c51c6a0966f555bea447806583de949460e47d38e1ea3f813f2b5d601c"
-      url "https://github.com/MonotonicHQ/retrofit/releases/download/bin-v#{version}/retrofit_linux_amd64.tar.gz",
-          verified: "github.com/MonotonicHQ/retrofit/"
+      sha256 "bce549031b1658bafc8f491811f981b90462b0ded43081db012f32d78d6179a2"
+      url "https://github.com/MonotonicHQ/retrofit/releases/download/bin-v#{version}/retrofit_linux_amd64.tar.gz"
     end
   end
 
