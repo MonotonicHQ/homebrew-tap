@@ -1,25 +1,25 @@
 # Written by retrofit's release workflow (cmd/release cask) for each
 # published build; an edit here is overwritten by the next one.
 cask "retrofit@wip" do
-  version "0.12.0-wip.45"
+  version "0.12.0-wip.46"
 
   on_macos do
     on_arm do
-      sha256 "ab0d01813d042ab65721a3bda0e967eeb1bb9a82f9fd9dab32d34ca12a100bd3"
+      sha256 "bf42fa87327282bd0cc0bb4e775ed6c966d92440470cf78d4c5eb4d482b4d5a2"
       url "https://github.com/MonotonicHQ/retrofit/releases/download/bin-v#{version}/retrofit_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "6d0e5651fcb24979d2d74bd1836f5cdcae15b1f31725fe13066474dca24f966f"
+      sha256 "eaba37e1589c84ce62bb9ad8a4efeadb21d7db7adc9b27cada09f3883e04a1ab"
       url "https://github.com/MonotonicHQ/retrofit/releases/download/bin-v#{version}/retrofit_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "23627865e4700d639b0e5ab1c140c87cab2602a413b2c56c0662cef67f258360"
+      sha256 "10c658d2954049ceda06cd0b4a5b6cb6b606b892e980096cf00f5b13781ad795"
       url "https://github.com/MonotonicHQ/retrofit/releases/download/bin-v#{version}/retrofit_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "64b6cbe674b6d2895a26b46a099cb4deeb15dbcc5fe699288155054793ea834e"
+      sha256 "26337da0e1c55dcfa789236b7ad9bbf86f0ca299fab0cc23aab5c951830e5276"
       url "https://github.com/MonotonicHQ/retrofit/releases/download/bin-v#{version}/retrofit_linux_amd64.tar.gz"
     end
   end
