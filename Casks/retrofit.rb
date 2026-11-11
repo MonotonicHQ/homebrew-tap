@@ -1,25 +1,25 @@
 # Written by retrofit's release workflow (cmd/release cask) for each
 # published build; an edit here is overwritten by the next one.
 cask "retrofit" do
-  version "0.12.0"
+  version "0.13.0"
 
   on_macos do
     on_arm do
-      sha256 "c28a7bd032304f1b777bbbc943356f30772755e2b8c5758cd2f5ac5a0e3c986c"
+      sha256 "5e5f26d3961350301389aa80446ca3194b328908c57187caa77aceb7b6067104"
       url "https://github.com/MonotonicHQ/retrofit/releases/download/bin-v#{version}/retrofit_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "5108ff90ca9862e8e5f70ae98af82435b2e5c10b8bc896a893366d50f249a557"
+      sha256 "62d37fda5976ff2fed7afba10bc8e1471641cf50b163786222cf9ef1566b2469"
       url "https://github.com/MonotonicHQ/retrofit/releases/download/bin-v#{version}/retrofit_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "d53adeb7eb5fc2f3bb200d5fee37bbc66920f9fc76af1e0c66f2a57844ac3c51"
+      sha256 "902ce820f010a195cdc8bfc91ea26fdfb8ba7d41992891da3e21c27926d1e41f"
       url "https://github.com/MonotonicHQ/retrofit/releases/download/bin-v#{version}/retrofit_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "fbdadb27e905164272b9868878317f1e4c1ad1cc37ad2015ee691ad3196cd822"
+      sha256 "53bfdc2724d7cb25bec44c1c7cf1635226a2de49db30ed19ee6e53324e8818ee"
       url "https://github.com/MonotonicHQ/retrofit/releases/download/bin-v#{version}/retrofit_linux_amd64.tar.gz"
     end
   end
@@ -52,6 +52,7 @@ cask "retrofit" do
   manpage "man/man1/retrofit-op-compact.1"
   manpage "man/man1/retrofit-op-info.1"
   manpage "man/man1/retrofit-op-remove.1"
+  manpage "man/man1/retrofit-op-revert.1"
   manpage "man/man1/retrofit-op-revise.1"
   manpage "man/man1/retrofit-op-seal.1"
   manpage "man/man1/retrofit-op-show.1"
@@ -63,6 +64,7 @@ cask "retrofit" do
   manpage "man/man1/retrofit-ops.1"
   manpage "man/man1/retrofit-reconcile.1"
   manpage "man/man1/retrofit-schema-create.1"
+  manpage "man/man1/retrofit-schema-database-at.1"
   manpage "man/man1/retrofit-schema-engine.1"
   manpage "man/man1/retrofit-schema-form.1"
   manpage "man/man1/retrofit-schema-list.1"
