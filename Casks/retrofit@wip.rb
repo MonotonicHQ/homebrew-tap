@@ -1,25 +1,25 @@
 # Written by retrofit's release workflow (cmd/release cask) for each
 # published build; an edit here is overwritten by the next one.
 cask "retrofit@wip" do
-  version "0.16.0-wip.99"
+  version "0.16.0-wip.100"
 
   on_macos do
     on_arm do
-      sha256 "d4fa20b37f4ab4a7cb5ba4560c8bb88c4b2b1e82c0bc26b5c51e2e85937b4931"
+      sha256 "317f0a5fb23686e14a531b7ec174a0d3ac50abf933be8f5552bc37be71216944"
       url "https://github.com/MonotonicHQ/retrofit/releases/download/bin-v#{version}/retrofit_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "609b54ecfe8648d9524bb553b14d14a2c429aa8cb538a2b2ff769b489b9273a1"
+      sha256 "bdcd48f7bf2fcd30b0cc4e0f827009d1b044389022b3bd12c6f3a53136975ac8"
       url "https://github.com/MonotonicHQ/retrofit/releases/download/bin-v#{version}/retrofit_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "e8578711a3d6f99eb6727812c47d3e693e9e51dc39d5968d27037b8bd36193b0"
+      sha256 "2c3ad336008ee25143c4f8fe8b2cd03af2f62f5ec564b0f41d4b23a822e93f5b"
       url "https://github.com/MonotonicHQ/retrofit/releases/download/bin-v#{version}/retrofit_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "9738e21691637ac1da6a7f2248c2928943258b66ac4254da7777a74a22dd5b89"
+      sha256 "3a5e70f31c60497186db0afaf3f7808a4d2ec532ee779fb92f6fc34dfb7ecc43"
       url "https://github.com/MonotonicHQ/retrofit/releases/download/bin-v#{version}/retrofit_linux_amd64.tar.gz"
     end
   end
@@ -31,6 +31,13 @@ cask "retrofit@wip" do
   conflicts_with cask: "retrofit"
 
   binary "retrofit"
+  manpage "man/man1/retrofit-catalog-create.1"
+  manpage "man/man1/retrofit-catalog-engine.1"
+  manpage "man/man1/retrofit-catalog-member-add.1"
+  manpage "man/man1/retrofit-catalog-member-remove.1"
+  manpage "man/man1/retrofit-catalog-member.1"
+  manpage "man/man1/retrofit-catalog-rename.1"
+  manpage "man/man1/retrofit-catalog.1"
   manpage "man/man1/retrofit-data-capture.1"
   manpage "man/man1/retrofit-data-check.1"
   manpage "man/man1/retrofit-data-list.1"
